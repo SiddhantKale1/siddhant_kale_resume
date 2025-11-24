@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/siddhant_kale_resume/", // ⭐ REQUIRED FOR GITHUB PAGES ⭐
+
+  // ⭐ REQUIRED FOR GITHUB PAGES ⭐
+  base: "/siddhant_kale_resume/",
 
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
@@ -17,4 +19,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
